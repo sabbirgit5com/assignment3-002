@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-<style>
+ <style>
     .sora-font{
         font-family: "Sora", serif;
     }
@@ -18,26 +18,30 @@
 <body>
     <header class="bg-[#EFEBE3] bg-gradient-to-t from-[#EFEBE3] to-white">
        <nav class="mt-4">
-        <div class="flex justify-around">
+        <div class="flex justify-around border-b border-green-700 lg:w-full md: w-full w-1/2 lg:border-none md:border-none">
             <div class="mt-2">
                 <img src="Assignment_03_Category_0002/c2-assets/logo-header.png" alt="">              
             </div>
+            <div class="lg:hidden md:hidden justify-items-end ml-52 mt-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+            </div>
             <div>
-                <ul class=" flex gap-8 mt-5 sora-font">
-                    <li>Product</li>
-                    <li>Services</li>
-                    <li>Contact us</li>
+                <ul class="sm:flex gap-8 lg:mt-5 sora-font space-x-4 hidden">
+                    <li><a href="#" class="text-black">Product</a></li>
+                    <li><a href="#" class="text-black">Services</a></li>
+                    <li><a href="#" class="text-black">Contuct us</a></li>
+                    
                 </ul>
             </div>
-            <div class="flex gap-4 mt-3">
-                <div class="flex mt-3">
+            <div class="lg:flex  gap-4 lg:mt-3">
+                <div class="lg:flex  mt-3 hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg>
                 </div>
                 
-                <div>
-                    <button type="button" class="border border-green-700 px-4 py-2 rounded-xl text-black sora-font">Login</button>
-                    <button class="border border-slate-500 border-none bg-green-700 text-white px-4 py-2 rounded-xl sora-font" type="button">Register</button>
+                <div class="md:block lg:block hidden">
+                    <button type="button" class="border border-green-700 px-4 py-2 rounded-xl text-black sora-font ">Login</button>
+                    <button class="border border-slate-500 border-none bg-green-700 text-white px-4 py-2 rounded-xl sora-font " type="button">Register</button>
                 </div>
             </div>     
         </div>    
@@ -48,18 +52,50 @@
         <div class="mt-10 justify-items-center">
             <!-- banner text -->
             <div class="text-center">
-                <h1 class="text-3xl font-semibold sora-font mb-3">Freshness <span class="text-green-700">You Can <br> Count </span>On Prices You'll Love!</h1>
+                <h1 class="text-3xl font-semibold sora-font mb-3 w-[98%] lg:w-full md:w-full">Freshness <span class="text-green-700">You Can <br> Count </span>On Prices You'll Love!</h1>
                 <p class="sora-font">Shop Your Daily essentials at unbeatable prices, From fresh produce to pantry <br> staples, we've got you covered every day!</p>
             </div>
             <!-- banner image  -->
-             <div>
+             <div class="lg:block md:block w-[95%] justify-items-center transition-transform duration-300 hover:scale-110">
                 <img src="Assignment_03_Category_0002/c2-assets/hero-vegetables.png" alt="">
              </div>
         </div>
     </header>
+    <br>
+    <br>
     <main>
-        <div>
-
+        <div class="mt-10 lg:block md:block">
+            <div>
+                <h1 class="sora-font text-4xl ml-10 font-semibold text-green-700">Services</h1>
+            </div>
+            <div class=" flex gap-4  justify-evenly mt-7 avater lg:flex md:flex grid">
+                <div class="text-center bg-[#EFEBE3] px-5 py-10 rounded-xl">
+                    <div class="w-24 rounded-full bg-white mx-auto"> 
+                        <img src="Assignment_03_Category_0002/c2-assets/service.png" alt="">
+                    </div>
+                    <h3 class="text-xl sora-font font-semibold">24/7 Services</h3>
+                    <p class="sora-font">24hour services, and 7days <br> 24hou services. 
+                        all time custommers support <br> open and heppy custommers.
+                    </p>
+                </div>
+                <div class="text-center bg-[#EFEBE3] px-12 py-10  rounded-xl">
+                    <div class="w-24 rounded-full bg-white mx-auto">
+                        <img src="Assignment_03_Category_0002/c2-assets/delivery.png" alt=""><img> 
+                    </div>
+                    
+                    <h3 class="text-xl sora-font font-semibold">Fast Delivery</h3>
+                    <p class="sora-font">Fast dalivery all time, fast delivery <br> support. and you product <br> full safe delivery.</p>
+                </div>
+                <div class="text-center bg-[#EFEBE3] px-5 py-10 rounded-xl"> 
+                    <div class="w-24 rounded-full bg-white mx-auto">
+                        <img src="Assignment_03_Category_0002/c2-assets/healthy.png" alt="">
+                    </div>
+                    
+                    <h3 class="text-xl sora-font font-semibold">Healthy Products</h3>
+                    <p class="sora-font">bast healthy vagitable, and freshness <br>vagitable.unfresh vagitable return,<br>and back freshness vagitable</p>
+                </div>
+            </div>
+           
         </div>
     </main>
     <footer>
